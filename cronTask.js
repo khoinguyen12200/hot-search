@@ -1,7 +1,4 @@
 const cnn = require('./connection');
-
-
-
 const google = require('./googleApi.js');
 const addSubtractDate = require("add-subtract-date");
 var dateFormat = require('dateformat');
@@ -55,7 +52,10 @@ async function updateSiteMap() {
 
 function updateAll() {
     google.updateDailyTrends(promiseQuery);
-    updateSiteMap();
+    setTimeout(function() {
+        updateSiteMap();
+    },1000*15)
+    
     writeLog("update and sitemap " + new Date()); 
 }
 updateAll();

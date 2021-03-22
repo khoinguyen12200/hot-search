@@ -60,7 +60,7 @@ exports.getNews = (id, title, date) => {
 exports.getDaily = (date) => {
     return `
     <url>
-        <loc>${WEB_URL}${DAILY}${date}</loc>
+        <loc>${WEB_URL}${DAILY}${urlDateFormat(date)}</loc>
         <lastmod>${standarFormat(new Date())}</lastmod>
     </url>
     `;

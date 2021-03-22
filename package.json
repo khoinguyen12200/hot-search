@@ -1,0 +1,28 @@
+{
+  "name": "server-hotsearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "add-subtract-date": "^1.0.15",
+    "body-parser": "^1.19.0",
+    "build": "^0.1.4",
+    "dateformat": "^4.5.1",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "google-trends-api": "^4.9.2",
+    "https": "^1.0.0",
+    "mysql": "^2.18.1",
+    "node-cron": "^2.0.3",
+    "path": "^0.12.7",
+    "serve": "^11.3.2"
+  }
+}
